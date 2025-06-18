@@ -14,8 +14,8 @@
     --preto: #000000;
     --verde-pixelV: #00CF21;
     --roxo-pixelV: #4700CF;
-    --fundo-site: #F3F2F2;
-    --contato: #E5E5E5;
+    --Fundo-site: #F3F2F2;
+    --Contato: #E5E5E5;
 }
 
 .container-grid {
@@ -41,7 +41,7 @@ body {
     margin-bottom: 0;
     background-color: var(--roxo-pixelV);
     border-radius: 20px;
-    padding: 10px 10px;
+    padding: 10px 18px;
 }
 
 .titulo span{
@@ -155,20 +155,21 @@ header .container-grid {
     margin-top: 30px;
 }
 
-/* ------------- parallax ------------- */
+
+/* /------------------PARALLAX--------------------/ */
 
 #parallax{
     height: 250px;
 
-    /* background-image: url(./img/parallax.svg); */
+   /* background-image: url(./imgs/parallax.svg); */
 
-    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./img/parallax.svg);
-    background-attachment: fixed;
-    background-size: 30%;
-    margin-bottom: 120px;
+   background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./img/parallax.svg);
+   background-attachment: fixed;
+   background-size: 30%;
+   margin-bottom: 120px;
 }
 
-/* ------------- serviços ------------- */
+/* /--------------- Serviços ------------/ */
 #servicos{
     margin-bottom: 120px;
 }
@@ -198,7 +199,8 @@ header .container-grid {
 
     height: 250px;
     width: 100vw;
-    background: linear-gradient(0deg, rgba(36, 0, 105, 1)0%, rgba(71, 0, 207, 1)100%);
+    background: linear-gradient(0deg, rgba(36, 0, 105, 1)0%,
+    rgba(71, 0, 207, 1)100%);
 }
 
 #servicos .card{
@@ -206,7 +208,7 @@ header .container-grid {
     margin: 20px;
     padding: 40px 20px;
     border-radius: 40px;
-    background-color: #F3F2F2;
+    background-color: #F2F2F2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
 
@@ -217,17 +219,17 @@ header .container-grid {
 }
 
 #servicos .card h3{
-    font-style: 24px;
+    font-size: 24px;
     margin: 5px 0 30px;
     color: var(--roxo-pixelV);
-    font-family: "recursive", sans-linear-bold;
+    font-family: "Recursive", sans-linear-bold;
     text-align: center;
 }
 
 #servicos .card p{
-    font-family: "recursive", sans-linear;
-    font-size: 10px;
-    margin-bottom: 10px;
+    font-family: "Recursive", sans-linear;
+    font-size: 18px;
+    margin-bottom: 20px;
     line-height: 1.5;
 }
 
@@ -248,7 +250,7 @@ header .container-grid {
     fill: var(--verde-pixelV);
 }
 
-/* ------------- cases de sucesso ------------- */
+/* /------------ Cases de sucesso ---------------/ */
 
 #cases h2{
     margin-right: 5px;
@@ -267,12 +269,12 @@ header .container-grid {
     border-radius: 40px;
 }
 
-#meuCarrossel {
+#meuCarrosel {
     max-width: 1170px;
     width: 90%;
 }
 
-/* ------------- contato ------------- */
+/* /------------- Contato -------------/ */
 
 #contato{
     text-align: center;
@@ -301,7 +303,7 @@ header .container-grid {
     align-items: center;
 
     border-radius: 40px;
-    background-color: var(--contato);
+    background-color: var(--Contato);
     border: solid 3px var(--roxo-pixelV);
 
     color: var(--preto);
@@ -321,7 +323,7 @@ header .container-grid {
     margin-bottom: 50px;
 }
 
-.campo-descricao{
+.campo-descrição{
     width: 60%;
 
     text-align: left;
@@ -347,9 +349,12 @@ header .container-grid {
     outline: none;
 }
 
-.campo-descricao textarea{
+.campo-descrição textarea{
     color: var(--preto);
     background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
 
     outline: none;
 
@@ -359,23 +364,23 @@ header .container-grid {
 }
 
 .campo-lable,
-.campo-descricao label{
+.campo-descrição label{
     margin-bottom: 15px;
 }
 
 .campo input,
-.campo-descricao textarea{
-    font-family: "recursive", sans-linear;
+.campo-descrição textarea{
+    font-family: "Recursive", sans-linear;
     font-size: 17px;
 }
 
 .campo input::placeholder,
-.campo-descricao textarea::placeholder{
-    color: #a8a8a8;
+.campo-descrição textarea::placeholder{
+    color: #a0a0a0;
 }
 
-.campo input,
-.campo-descricao textarea:focus {
+.campo input:focus,
+.campo-descrição textarea:focus {
     outline: 2px solid var(--verde-pixelV);
 }
 
@@ -390,7 +395,7 @@ header .container-grid {
     border-radius: 4px;
 
     font-size: 17px;
-    font-family: "recursive", sans-linear;
+    font-family: "Recurive", sans-linear;
     font-weight: 700;
 
     text-transform: uppercase;
@@ -401,11 +406,10 @@ header .container-grid {
 }
 
 #contato form button:hover{
-    background-color: var(--verde-pixelV);
+    background-color:var(--verde-pixelV);
 }
 
-/* ------------- foolter ------------- */
-
+/* /--------- Foolter ----------/ */
 footer{
     height: 250px;
     background-image: url(./img/footer.png);
@@ -435,7 +439,7 @@ footer .container-grid{
 .redes-sociais p{
     color: var(--branco);
 
-    font-family: "recursive", sans-bold;
+    font-family: "Recursive", sans-linear-bold;
     font-size: 24px;
 }
 
@@ -454,8 +458,7 @@ footer .container-grid{
     color: var(--verde-pixelV);
 }
 
-/* ------------- Responsividade ------------- */
-
+/* /------------- Responsavidade -------------/ */
 @media screen and (max-width: 1024px){
     .titulo,
     .titulo h2{
@@ -464,7 +467,7 @@ footer .container-grid{
     }
 
     .menu{
-        justify-content: space-evenly;
+         justify-content: space-evenly;
     }
 
     .titulo span{
@@ -475,12 +478,12 @@ footer .container-grid{
         font-size: 16px;
     }
 
-    #servicos .card svg{
+    #serviços .card svg{
         height: 55px;
     }
 }
 
-/* ------------- menu hamburguer ------------- */
+/* /------------ Menu Hamburguer -----------/ */
 #icone-barras,
 #icone-x{
     display: none;
@@ -489,7 +492,7 @@ footer .container-grid{
 .menu-fechado{
     display: none;
 }
-/* ------------------------------------------ */
+/* /--------------------------------------/ */
 
 @media screen and (max-width: 768px){
     header{
@@ -545,7 +548,7 @@ footer .container-grid{
         height: 200px;
     }
 
-    footer .roda-pe {
+    footer .roda-pe{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
@@ -567,7 +570,7 @@ footer .container-grid{
     }
 }
 
-@media screen and (max-width:320){
+@media screen and (max-width: 320px){
     nav.menu {
         width: 260px;
     }
@@ -585,7 +588,8 @@ footer .container-grid{
         font-size: 25px;
     }
 
-    .titulo.titulo h2{
+    .titulo,
+    .titulo h2{
         font-size: 20px;
     }
 }
